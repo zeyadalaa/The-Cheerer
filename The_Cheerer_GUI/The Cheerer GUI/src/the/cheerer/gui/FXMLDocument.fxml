@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="593.0" style="-fx-background-color: #00a7d6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="the.cheerer.gui.FXMLDocumentController">
+    <children>
+        <Button fx:id="ShowVideos" layoutX="218.0" layoutY="212.0" onAction="#ShowVideoAction" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Show Videos">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="36.0" layoutY="27.0" minHeight="16" minWidth="69" prefHeight="31.0" prefWidth="338.0" text="How are you feeling today ?">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <VBox alignment="CENTER_LEFT" cache="true" layoutX="45.0" layoutY="73.0" prefHeight="54.0" prefWidth="104.0" spacing="5.0">
+         <children>
+            <RadioButton fx:id="sad" mnemonicParsing="false" selected="true" text="Sad">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Feelings" />
+               </toggleGroup>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="happy" mnemonicParsing="false" text="Happy" toggleGroup="$Feelings">
+               <font>
+                  <Font size="21.0" />
+               </font></RadioButton>
+         </children>
+      </VBox>
+      <Button fx:id="ShowQuotes" layoutX="14.0" layoutY="212.0" mnemonicParsing="false" onAction="#ShowQuotescAtion" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Show Quotes">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="36.0" layoutY="150.0" minHeight="16" minWidth="69" prefHeight="31.0" prefWidth="338.0" style="-fx-background-radius: 50; -fx-border-radius: 50; fx-border-width: 1;" text="Choose your content">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="ListentoMusic" layoutX="409.0" layoutY="212.0" onAction="#ShowMusicAction" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Listen to Music">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00a7d6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="the.cheerer.gui.HomePageController">
+   <children>
+      <Label layoutX="147.0" layoutY="45.0" prefHeight="60.0" prefWidth="290.0" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50;" text=" The Cheerer">
+         <font>
+            <Font name="Symbol" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="124.0" prefHeight="186.0" prefWidth="571.0" style="-fx-background-color: lightGreen;" text="The Cheerer is an application made to care about your feelings, wheather you feel pumped after hearing amazing news, going through a bad breakup with someone you love, The cheerer is all about making you feel better. You can listen to newely music straight outta studios to set your mood, Read interesting quotes written by cool people to give you an emotional boost, Watch videos to get you all motivated for your important goals." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Symbol" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn" layoutX="242.0" layoutY="319.0" mnemonicParsing="false" onAction="#Enter" onMousePressed="#Enter" prefHeight="60.0" prefWidth="116.0" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50;" text="Enter">
+         <font>
+            <Font name="Symbol" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

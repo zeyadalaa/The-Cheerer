@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00a7d6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="the.cheerer.gui.FXMLQuotesController">
+   <children>
+      <Label fx:id="label1" layoutX="14.0" layoutY="186.0" prefHeight="129.0" prefWidth="574.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="imageview" fitHeight="154.0" fitWidth="273.0" layoutX="164.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" />
+      <Button fx:id="back" layoutX="48.0" layoutY="344.0" mnemonicParsing="false" onAction="#BackAction" prefHeight="42.0" prefWidth="116.0" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Back">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="446.0" layoutY="344.0" mnemonicParsing="false" onAction="#ExitAction" prefHeight="42.0" prefWidth="116.0" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Exit">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

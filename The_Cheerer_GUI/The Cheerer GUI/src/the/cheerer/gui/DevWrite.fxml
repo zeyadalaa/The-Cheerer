@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="776.0" style="-fx-background-color: #00a7d6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="the.cheerer.gui.DevWriteController">
+   <children>
+      <Button fx:id="addQuotes" layoutX="44.0" layoutY="162.0" mnemonicParsing="false" onAction="#addQuotes" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Add Quotes">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="addVideoLinks" layoutX="29.0" layoutY="232.0" mnemonicParsing="false" onAction="#addVideosLink" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Add Video Links">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="addPhotoLinks" layoutX="28.0" layoutY="312.0" mnemonicParsing="false" onAction="#addPhotoLink" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Add Photo Links">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="addMusicID" layoutX="38.0" layoutY="387.0" mnemonicParsing="false" onAction="#addMusicID" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Add Music ID">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="Back" layoutX="29.0" layoutY="557.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="40.0" prefWidth="76.0" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Back">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="Exit" layoutX="148.0" layoutY="557.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="40.0" prefWidth="76.0" style="-fx-background-color: #1ed761; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #15af4d; fx-border-width: 1;" text="Exit">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <VBox alignment="CENTER_LEFT" cache="true" layoutX="46.0" layoutY="38.0" prefHeight="54.0" prefWidth="104.0" spacing="5.0">
+         <children>
+            <RadioButton fx:id="sad" mnemonicParsing="false" selected="true" text="Sad">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Feelings" />
+               </toggleGroup>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="happy" mnemonicParsing="false" text="Happy" toggleGroup="$Feelings">
+               <font>
+                  <Font size="21.0" />
+               </font></RadioButton>
+         </children>
+      </VBox>
+      <TextArea fx:id="txt" layoutX="269.0" layoutY="66.0" prefHeight="404.0" prefWidth="489.0" />
+   </children>
+</AnchorPane>
